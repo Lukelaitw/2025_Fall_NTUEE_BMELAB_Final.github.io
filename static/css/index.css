@@ -732,6 +732,45 @@ a:focus {
 }
 
 
+/* Project Components Card Hover Effects */
+.project-card {
+  border-radius: var(--border-radius-lg) !important;
+  border: 1px solid var(--border-color) !important;
+  box-shadow: var(--shadow-md) !important;
+  transition: var(--transition) !important;
+  background: var(--background-primary) !important;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  transform: translateY(-8px) !important;
+  box-shadow: var(--shadow-xl) !important;
+  border-color: var(--primary-color) !important;
+}
+
+.project-card .card-content {
+  padding: 2rem 1.5rem !important;
+}
+
+.project-card .title.is-4 {
+  color: var(--text-primary) !important;
+  margin-bottom: 1rem !important;
+  transition: var(--transition);
+}
+
+.project-card:hover .title.is-4 {
+  color: var(--primary-color) !important;
+}
+
+.project-card p {
+  color: var(--text-secondary) !important;
+  transition: var(--transition);
+}
+
+.project-card:hover p {
+  color: var(--text-primary) !important;
+}
+
 /* Print styles */
 @media print {
   .more-works-container {

@@ -343,7 +343,7 @@
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            As Brain-Computer Interfaces (BCIs) evolve from clinical tools to immersive Human-Computer Interaction modalities, the field is shifting from discrete commands toward continuous mental state decoding. This study investigates the feasibility of utilizing continuous EEG fluctuations to control a physics-based simulation governed by stability constraints. We developed "Tightrope Balance," a real-time bio-feedback application driven by a custom Convolutional Transformer Network (CTNet). Trained on a 35-subject dataset to differentiate "Focus" and "Relax" states, the model operates within a decoupled Client-Server architecture supporting both laboratory-grade (BIOPAC) and consumer-grade (BrainLink) hardware. The system maps inference outputs to rotational torque vectors in a Pygame physics engine, creating a continuous control loop, while repurposing ocular artifacts as discrete jump triggers. Rigorous Leave-One-Subject-Out (LOSO) cross-validation yielded a mean accuracy of 71.3%, significantly surpassing the 55.1% baseline and confirming robust subject-independent generalization. In real-time deployment, the system successfully established a responsive bio-feedback loop, allowing users to actively modulate avatar equilibrium. While the custom classifier demonstrated exceptional stability on high-fidelity hardware, cross-platform deployment to wearable devices revealed expected performance trade-offs due to domain shift, though functional control was maintained. Ultimately, this project validates the efficacy of hybrid deep learning architectures in decoding non-stationary EEG signals for continuous control tasks, offering an intuitive, gamified interface for users to master cognitive stability.
           </p>
         </div>
       </div>
@@ -352,6 +352,60 @@
 </section>
 <!-- End paper abstract -->
 
+<!-- Project Components -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full">
+        <h2 class="title is-3">Project Components</h2>
+        <p class="subtitle is-5">This project consists of three main components</p>
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-one-third">
+        <div class="card project-card" style="height: 100%;">
+          <div class="card-content">
+            <div class="content has-text-centered">
+              <h3 class="title is-4">Classifier</h3>
+              <p>
+                A Convolutional Transformer Network (CTNet) for EEG signal classification,
+                capable of distinguishing between "Focus" and "Relax" states, providing real-time
+                cognitive state decoding for game control.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column is-one-third">
+        <div class="card project-card" style="height: 100%;">
+          <div class="card-content">
+            <div class="content has-text-centered">
+              <h3 class="title is-4">Balance Game</h3>
+              <p>
+                A physics-based balance game developed with Pygame, mapping classifier outputs
+                to rotational torque vectors, enabling continuous brain-computer interface control loops.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column is-one-third">
+        <div class="card project-card" style="height: 100%;">
+          <div class="card-content">
+            <div class="content has-text-centered">
+              <h3 class="title is-4">Server Client + BrainLink</h3>
+              <p>
+                A decoupled client-server architecture supporting both laboratory-grade (BIOPAC)
+                and consumer-grade (BrainLink) hardware, enabling cross-platform EEG signal acquisition and processing.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Project Components -->
 
 <!-- Image carousel -->
 <section class="hero is-small">
