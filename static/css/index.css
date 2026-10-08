@@ -205,6 +205,135 @@ body {
   margin-right: 0.5rem;
 }
 
+.project-authors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem 1.5rem;
+}
+
+.project-authors .author-block {
+  margin-right: 0;
+}
+
+.project-authors a {
+  white-space: nowrap;
+}
+
+/* First Prize award */
+.award-section {
+  padding: 3rem 1.5rem;
+  background: #faf8f2;
+  border-top: 1px solid #eee5d2;
+  border-bottom: 1px solid #eee5d2;
+}
+
+.award-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.95fr);
+  align-items: center;
+  gap: 2.5rem;
+  padding: 2.5rem;
+  background: var(--background-primary);
+  border: 1px solid #eee5d2;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.award-medal {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  margin-bottom: 1.5rem;
+  border: 1px solid #ead5a4;
+  border-radius: 50%;
+  background: #fbf3df;
+  color: #8a5b0b;
+  font-size: 1.75rem;
+}
+
+.award-eyebrow {
+  margin-bottom: 0.75rem;
+  color: #84632b;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.award-title {
+  margin-bottom: 0.5rem;
+  color: #8a5b0b;
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.award-subtitle {
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.award-description {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.award-institution {
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid #eee5d2;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.award-photo {
+  margin: 0;
+  min-width: 0;
+}
+
+.award-photo-link {
+  display: block;
+  border-radius: var(--border-radius);
+}
+
+.award-photo-link:focus-visible {
+  outline: 3px solid #8a5b0b;
+  outline-offset: 4px;
+}
+
+.award-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+}
+
+.award-photo figcaption {
+  margin-top: 0.75rem;
+  color: var(--text-secondary);
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .award-section {
+    padding: 2rem 1.25rem;
+  }
+
+  .award-card {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2rem;
+    padding: 1.5rem;
+  }
+}
+
 .publication-banner img {
   border-radius: var(--border-radius-lg);
   box-shadow: var(--shadow-lg);
